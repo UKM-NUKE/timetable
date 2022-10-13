@@ -1,0 +1,86 @@
+\documentclass[extrafontsizes, 20pt]{memoir}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage[c4paper,left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, landscape]{geometry}
+\usepackage[sc]{mathpazo}
+    \linespread{1.05}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{multicol, multirow}
+\usepackage{array}
+\usepackage{nicematrix}
+
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}%
+\newcolumntype{y}[1]{%
+>{\raggedleft\hspace{0pt}}p{#1}}%
+\newcommand{\tn}{\tabularnewline}
+
+\title{Timetable}
+\author{Siewyan Hoh}
+
+\definecolor{STSN6012}{HTML}{ffb3ba}
+\definecolor{STSN6212}{HTML}{ffdcb3}
+\definecolor{STSN3052}{HTML}{ffffb3}
+\definecolor{STSN3313}{HTML}{b3ffb3}
+\definecolor{STSN2092}{HTML}{b3ccff}
+\definecolor{STSN3152}{HTML}{dfb3ff}
+
+\newcommand{\subject}[1]{#1\cellcolor{#1}}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\centering
+
+{\LARGE
+Timetable Semester 1 2022/2023\\
+}
+10 October - 4 December 2022
+
+\vfill
+
+\begin{table}[!h]
+\centering
+\begin{NiceTabular}{|c|x{4.7cm}|x{4.7cm}|x{4.7cm}|x{4.7cm}|x{4.7cm}|}[first-row,last-row,first-col]
+&	 &   Monday    &     Tuesday    &   Wednesday     &    Thursday    &    Friday     \tn\bottomrule
+\multirow{4}{*}{\rotatebox[origin=c]{90}{Morning}}&
+08h00 &          & \subject{STSN6212} &           & \subject{STSN2092} & \subject{STSN3152}                    \tn
+&09h00&          & \subject{STSN6212} &           & \subject{STSN2092} & \subject{STSN3152}                   \tn
+&10h00&          &                    &           & \subject{STSN6012} &                    \tn
+&11h00&          &                    &           & \subject{STSN6012} &                    \tn\bottomrule
+\multirow{5}{*}{\rotatebox[origin=c]{90}{Evening}}&
+12h00&           &                    &           &                    &                    \tn
+&13h00&          &                    &           &                    &                    \tn
+&14h00&          & \subject{STSN3052} &           & \subject{STSN3313} &                    \tn
+&15h00&          & \subject{STSN3052} &           & \subject{STSN3313} &                    \tn
+&16h00&          &                    &           & \subject{STSN3313} &                    \tn \toprule \\ %\bottomrule
+%\multirow{3}{*}{\rotatebox[origin=c]{90}{Night}}&
+%17h00&           &  &                    &  &                    \tn
+%&18h00&         &  &                    &  &                    \tn
+%&19h00&                    &                    &                    &                    &                    \tn\toprule\\
+\end{NiceTabular}
+\end{table}
+%\vfill
+\vspace{-0.8cm}
+\begin{table}[!h]
+\centering
+\begin{tabular}{!{\vrule width 1pt}x{3.5cm}!{\vrule width 1pt}p{8cm}!{\vrule width 1pt}x{3.5cm}!{\vrule width 1pt}p{8cm}!{\vrule width 1pt}}\bottomrule
+    %\subject{STSN6212} & Quantities and Measurements \cellcolor{STSN6212} & \subject{STSN6012} & Interaction of Radiation with Matters \cellcolor{STSN6012} \tn
+    \subject{STSN6212} &\multicolumn{3}{l!{\vrule width 1pt}}{Quantities and Measurements\cellcolor{STSN6212}} \tn
+    \subject{STSN6012} &\multicolumn{3}{l!{\vrule width 1pt}}{Interaction of Radiation with Matters\cellcolor{STSN6012}} \tn
+    \subject{STSN3052} &\multicolumn{3}{l!{\vrule width 1pt}}{High Energy Physics\cellcolor{STSN3052}} \tn
+    \subject{STSN2092} &\multicolumn{3}{l!{\vrule width 1pt}}{Atomic Physics\cellcolor{STSN2092}} \tn
+    \subject{STSN3313} &\multicolumn{3}{l!{\vrule width 1pt}}{Nuclear Law\cellcolor{STSN3313}} \tn
+    \subject{STSN3152} &\multicolumn{3}{l!{\vrule width 1pt}}{Advanced Nuclear Physics\cellcolor{STSN3152}} \tn
+
+    %\subject{MAT01057} & Real Analysis A\cellcolor{MAT01057} & \subject{FIS01008} & Quantum Physics I\cellcolor{FIS01008} \tn
+    %\subject{FIS01207} & Mathematical Physics I\cellcolor{FIS01207} & \subject{FIS01209} & Classical Mechanics II\cellcolor{FIS01209} \tn
+    %\subject{FIS02213} &\multicolumn{3}{l!{\vrule width 1pt}}{Astrophysics B\cellcolor{FIS02213}} \tn
+    %\subject{INF01046} & \multicolumn{3}{l!{\vrule width 1pt}}{Fundamentals of Image Processing\cellcolor{INF01046}} \tn\toprule
+\end{tabular}
+\end{table}
+\vfill
+\end{document}
