@@ -1,4 +1,4 @@
-\documentclass[extrafontsizes, 20pt]{memoir}
+\documentclass[extrafontsizes, 17pt]{memoir}
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage[c4paper,left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, landscape]{geometry}
@@ -20,13 +20,13 @@
 \title{Timetable}
 \author{Siewyan Hoh}
 
-\definecolor{STSN6012}{HTML}{ffb3ba}
-\definecolor{STSN6212}{HTML}{ffdcb3}
-\definecolor{STSN6082}{HTML}{abb2b9}
-\definecolor{STSN3052}{HTML}{ffffb3}
-\definecolor{STSN3313}{HTML}{b3ffb3}
-\definecolor{STSN2092}{HTML}{b3ccff}
-\definecolor{STSN3152}{HTML}{dfb3ff}
+\definecolor{STSN6624}{HTML}{ffb3ba}
+\definecolor{STSN6382}{HTML}{ffdcb3}
+\definecolor{STSN6182}{HTML}{abb2b9}
+\definecolor{STSN2142}{HTML}{ffffb3}
+\definecolor{LMCW1022}{HTML}{b3ffb3}
+\definecolor{XXXX0001}{HTML}{b3ccff}
+\definecolor{XXXX0002}{HTML}{dfb3ff}
 
 \newcommand{\subject}[1]{#1\cellcolor{#1}}
 
@@ -39,25 +39,25 @@
 {\LARGE
 Timetable Semester 2 2022/2023\\
 }
-27th March - 9th July 2023
+27th March - 14th May 2023 ; 22nd May - 9th July 2023
 
 \vfill
 
 \begin{table}[!h]
 \centering
-\begin{NiceTabular}{|c|x{4cm}|x{4cm}|x{4cm}|x{4cm}|x{4cm}|x{4cm}|}[first-row,last-row,first-col]
-&	 &   Monday    &     Tuesday    &   Wednesday     &    Thursday    &    Friday & Saturday     \tn\bottomrule
+\begin{NiceTabular}{|c|x{3.5cm}|x{3.5cm}|x{3.5cm}|x{3.5cm}|x{3.5cm}|x{3.5cm}|x{3.5cm}|}[first-row,last-row,first-col]
+&	                    &   Monday           &     Tuesday        &   Wednesday        &    Thursday        &    Friday          &   Saturday      & Sunday     \tn\bottomrule
 \multirow{4}{*}{\rotatebox[origin=c]{90}{Morning}}&
-08h00 &          & \subject{STSN6212} &                    & \subject{STSN2092} & \subject{STSN3152} &                    \tn
-&09h00&          & \subject{STSN6212} &                    & \subject{STSN2092} & \subject{STSN3152} &                  \tn
-&10h00&          &                    &                    &                    &                    & \tn
-&11h00&          &                    &                    &                    &                    & \tn\bottomrule
+08h00 &                     &                    & \subject{STSN2142} &                    &                    &                    &  \subject{STSN6182}        \tn
+&09h00&                     &                    & \subject{STSN2142} &                    & \subject{XXXX0002} & \subject{XXXX0001} &  \subject{STSN6182}      \tn
+&10h00& \subject{XXXX0001} &                    &                    &                    & \subject{XXXX0002} & \subject{XXXX0001} &  \tn                
+&11h00& \subject{XXXX0001} &                    &                    &                    &                    &                    &  \tn\bottomrule
 \multirow{5}{*}{\rotatebox[origin=c]{90}{Evening}}&
-12h00&           &                    &                    &                    &                    & \tn
-&13h00&          &                    &                    &                    &                    & \tn
-&14h00&          & \subject{STSN3052} & \subject{STSN6012} & \subject{STSN3313} &                    & \subject{STSN6082} \tn
-&15h00&          & \subject{STSN3052} & \subject{STSN6012} & \subject{STSN3313} &                    & \subject{STSN6082} \tn
-&16h00&          &                    &                    & \subject{STSN3313} &                    & \subject{STSN6082} \tn \toprule \\ %\bottomrule
+12h00&                     &                    &                    &                    &                    &                    & \tn
+&13h00&                    &                    &                    &                    &                    &                    & \tn
+&14h00& \subject{XXXX0001} & \subject{STSN6624} & \subject{XXXX0002} & \subject{LMCW1022} &                    &                    & \tn
+&15h00& \subject{XXXX0001} & \subject{STSN6624} & \subject{XXXX0002} & \subject{LMCW1022} &                    &                    & \subject{STSN6382} \tn
+&16h00&                    & \subject{STSN6624} &                    &                    &                    &                    & \subject{STSN6382} \tn \toprule \\ %\bottomrule
 %\multirow{3}{*}{\rotatebox[origin=c]{90}{Night}}&
 %17h00&           &  &                    &  &                    \tn
 %&18h00&         &  &                    &  &                    \tn
@@ -70,8 +70,13 @@ Timetable Semester 2 2022/2023\\
 \centering
 \begin{tabular}{!{\vrule width 1pt}x{3.5cm}!{\vrule width 1pt}p{8cm}!{\vrule width 1pt}x{3.5cm}!{\vrule width 1pt}p{8cm}!{\vrule width 1pt}}\bottomrule
   \subject{STSN6624} &\multicolumn{3}{l!{\vrule width 1pt}}{Practicum II\cellcolor{STSN6624}} \tn
+  \subject{STSN6382} &\multicolumn{3}{l!{\vrule width 1pt}}{Practicum II (3S)\cellcolor{STSN6382}} \tn
   \subject{STSN6182} &\multicolumn{3}{l!{\vrule width 1pt}}{Control and Accountancy of Nuclear Materials for safeguard and security purporse\cellcolor{STSN6182}} \tn
   \subject{STSN2142} &\multicolumn{3}{l!{\vrule width 1pt}}{Nuclear Physics\cellcolor{STSN2142}} \tn
+  \subject{LMCW1022} &\multicolumn{3}{l!{\vrule width 1pt}}{Basic Entrepreneurship and Innovation\cellcolor{LMCW1022}} \tn
+  \subject{XXXX0001} &\multicolumn{3}{l!{\vrule width 1pt}}{Research Project I\cellcolor{XXXX0001}} \tn
+  \subject{XXXX0002} &\multicolumn{3}{l!{\vrule width 1pt}}{Research Project II\cellcolor{XXXX0002}} \tn
+
 \end{tabular}
 \end{table}
 \vfill
